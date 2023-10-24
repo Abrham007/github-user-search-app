@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: #0079ff;
+  --color2: #697c9a;
+  --color3: #4b6a9b;
+  --color4: #2b3442;
+  --color5: #f6f8ff;
+  --color6: #fefefe;
+  --color7: #222731;
+}
+
+/*<<< -------------- Base h1-h4 and p------------>>>*/
+h1 {
+  color: var(--color4);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--color4);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--color3);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+h4 {
+  color: var(--color3);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+p {
+  color: var(--color4);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+/*<<< -------------- UI Commponents ------------>>>*/
+.search-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  border-radius: 15px;
+  background: var(--color6);
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+.search-input:hover {
+  cursor: pointer;
+}
+.search-input__text {
+  width: 60%;
+  color: var(--color7);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  border: none;
+  outline: none;
+}
+.search-input__error-text {
+  min-width: max-content;
+  color: #f74646;
+  font-size: 15px;
+  font-weight: 700;
+}
+.search-input__btn {
+  padding: 13px 24px;
+  font-weight: 700;
+  color: var(--color6);
+  border-radius: 10px;
+  background: var(--color1);
+  border: none;
+}
+.search-input__btn:hover {
+  cursor: pointer;
+  background: #60abff;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f8ff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 730px;
+  margin: 24px;
+}
+
+.header {
+  width: 100%;
+  gap: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__theme {
+  --theme-color: var(--color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 20px;
+  color: var(--theme-color);
+}
+.header__theme:hover {
+  cursor: pointer;
+  --theme-color: var(--color8);
+}
+.header__theme-text {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+.header__theme-logo {
+  fill: var(--theme-color);
+}
+
+/*# sourceMappingURL=style.css.map */
