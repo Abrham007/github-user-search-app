@@ -1,0 +1,12 @@
+{
+  "name": "starter-code",
+  "version": "1.0.0",
+  "description": "This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch assets/css/style.scss:assets/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
