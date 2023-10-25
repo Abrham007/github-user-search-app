@@ -17,8 +17,8 @@
   <body class="page">
     <main class="main">
       <header class="header">
-        <div class="header__logo">
-          <h1>devfinder</h1>
+        <div class="header__box">
+          <p class="header__logo">devfinder</p>
           <div class="header__theme">
             <span class="header__theme-text">Dark</span>
             <svg
@@ -47,23 +47,56 @@
         </div>
       </header>
 
-      <div>
-        <img src="./assets/Oval.svg" alt="cat" />
-        <div></div>
+      <div class="profile">
+        <img class="profile__img" src="./assets/Oval.svg" alt="cat" />
+        <div class="profile__info">
+          <div class="profile__intro">
+            <div class="profile__name">
+              <h1>The Octocat</h1>
+              <a class="profile__link" href="#">@octocat</a>
+            </div>
+            <h4 class="profile__date">Joined 25 Jan 2011</h4>
+          </div>
+          <div class="profile__bio">
+            <h3>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+              odio. Quisque volutpat mattis eros.
+            </h3>
+          </div>
+          <div class="profile__description">
+            <div>
+              <h4>Repos</h4>
+              <p class="profile__num">8</p>
+            </div>
+            <div>
+              <h4>Followers</h4>
+              <p class="profile__num">3939</p>
+            </div>
+            <div>
+              <h4>Following</h4>
+              <p class="profile__num">9</p>
+            </div>
+          </div>
+          <div class="profile__link-box">
+            <div class="profile__link-item">
+              <img src="./assets/icon-location.svg" alt="icon-location" />
+              <a class="profile__sub-link" href="#">San Francisco</a>
+            </div>
+            <div class="profile__link-item">
+              <img src="./assets/icon-twitter.svg" alt="icon-twitter" />
+              <a class="profile__sub-link" href="#">Not Available</a>
+            </div>
+            <div class="profile__link-item">
+              <img src="./assets/icon-website.svg" alt="icon-website" />
+              <a class="profile__sub-link" href="#">https://github.blog</a>
+            </div>
+            <div class="profile__link-item">
+              <img src="./assets/icon-company.svg" alt="icon-company" />
+              <a class="profile__sub-link" href="#">@github</a>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <!-- 
-
-  Light
-  
-
-  
-  Search
-
-  Joined
-
-  Repos
-  Followers
-  Following -->
   </body>
 </html>
