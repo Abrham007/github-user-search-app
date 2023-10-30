@@ -7,6 +7,8 @@
 // <<< -------------- Variables ------------>>>
 
 :root {
+  // <<< -------------- Light Theme Color------------>>>
+
   --color1: #0079ff;
   --color2: #697c9a;
   --color3: #4b6a9b;
@@ -14,6 +16,12 @@
   --color5: #f6f8ff;
   --color6: #fefefe;
   --color7: #222731;
+
+  // <<< -------------- Dark Theme Color------------>>>
+
+  --color-dark1: #fefefe;
+  --color-dark2: #141d2f;
+  --color-dark3: #1e2a47;
 }
 
 // <<< -------------- Media query Mixins ------------>>>
@@ -80,7 +88,7 @@ p {
   height: 70px;
   padding: 10px;
   border-radius: 15px;
-  background: var(--color6);
+  background-color: var(--color6);
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
 
   &:hover {
@@ -89,6 +97,7 @@ p {
 
   &__text {
     width: 60%;
+    background-color: transparent;
     color: var(--color7);
     font-size: 18px;
     font-weight: 400;

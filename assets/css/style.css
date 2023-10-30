@@ -12,6 +12,9 @@
   --color5: #f6f8ff;
   --color6: #fefefe;
   --color7: #222731;
+  --color-dark1: #fefefe;
+  --color-dark2: #141d2f;
+  --color-dark3: #1e2a47;
 }
 
 /*<<< -------------- Base h1-h4 and p------------>>>*/
@@ -58,7 +61,7 @@ p {
   height: 70px;
   padding: 10px;
   border-radius: 15px;
-  background: var(--color6);
+  background-color: var(--color6);
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
 }
 .search-input:hover {
@@ -66,6 +69,7 @@ p {
 }
 .search-input__text {
   width: 60%;
+  background-color: transparent;
   color: var(--color7);
   font-size: 18px;
   font-weight: 400;
@@ -98,7 +102,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f6f8ff;
+  background: var(--color5);
+  overflow: auto;
 }
 
 .main {
@@ -170,7 +175,7 @@ p {
   max-width: 100%;
   padding: 50px;
   border-radius: 15px;
-  background: var(--color6);
+  background-color: var(--color6);
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
 }
 @media (max-width: 800px) {
@@ -252,7 +257,7 @@ p {
   background: var(--color5);
 }
 .profile__num {
-  color: #2b3442;
+  color: var(--color4);
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
@@ -273,6 +278,9 @@ p {
 .profile__link-item {
   display: flex;
   gap: 16px;
+}
+.profile__link-icon {
+  fill: var(--color3);
 }
 .profile__sub-link {
   color: var(--color3);
