@@ -117,6 +117,7 @@ p {
   align-items: center;
   background: var(--color5);
   overflow: scroll;
+  font-family: "Space Mono", monospace;
 }
 
 .main {
