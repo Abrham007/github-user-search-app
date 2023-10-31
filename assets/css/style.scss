@@ -2,12 +2,12 @@
 
 .page {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--color5);
-  overflow: auto;
+  overflow: scroll;
 }
 
 .main {
@@ -58,7 +58,7 @@
 
     &:hover {
       cursor: pointer;
-      --theme-color: var(--color8);
+      --theme-color: var(--color7);
     }
 
     &-text {
@@ -95,6 +95,9 @@
   }
 
   &__img {
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
     position: absolute;
     top: 50px;
     left: 50px;

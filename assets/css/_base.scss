@@ -127,3 +127,17 @@ p {
     }
   }
 }
+
+/*<<< -------------- Utility ------------>>>*/
+
+.hidden {
+  display: none;
+}
+
+.inactive {
+  opacity: 0.5;
+}
+
+.transparent {
+  visibility: hidden;
+}

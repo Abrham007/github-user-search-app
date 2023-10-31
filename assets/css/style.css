@@ -96,14 +96,27 @@ p {
   background: #60abff;
 }
 
+/*<<< -------------- Utility ------------>>>*/
+.hidden {
+  display: none;
+}
+
+.inactive {
+  opacity: 0.5;
+}
+
+.transparent {
+  visibility: hidden;
+}
+
 .page {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--color5);
-  overflow: auto;
+  overflow: scroll;
 }
 
 .main {
@@ -154,7 +167,7 @@ p {
 }
 .header__theme:hover {
   cursor: pointer;
-  --theme-color: var(--color8);
+  --theme-color: var(--color7);
 }
 .header__theme-text {
   text-align: right;
@@ -189,6 +202,9 @@ p {
   }
 }
 .profile__img {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
   position: absolute;
   top: 50px;
   left: 50px;
