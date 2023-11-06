@@ -7,6 +7,7 @@ const themeText = document.querySelector(".js-theme-text");
 const themeLogo = document.querySelector(".js-theme-logo");
 const themeLogoDark = document.querySelector(".js-theme-logo-dark");
 let rs = getComputedStyle(rootElement);
+const APIKEY = "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";
 
 themeBtn.addEventListener("click", function () {
   if (themeText.textContent.toLowerCase() === "dark") {
@@ -56,7 +57,7 @@ document.querySelector(".js-search-btn").addEventListener("click", function () {
 
 async function fetchData(username) {
   const octokit = new Octokit({
-    auth: "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",
+    auth: APIKEY,
   });
   try {
     const response = await octokit.request(`GET /users/${username}`, {
